@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-item">
+        <div class="brand-name" style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">Daryl <br>Consulting</div>
+        <ul class="menu">
+            <li><a href="#">acceuil</a></li>
+            <li><a href="#services-section">service</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#about-section">à propos</a></li>
+            <li><a href="#contact-section">contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <img class="random-img" src="img\Accueil\Image N°1.jpeg" alt="">
+        <img class="random-img" src="img\Accueil\Image N°3.jpeg" alt="">
+        <img class="random-img" src="img\Accueil\Image N°4.jpeg" alt="">
+        <img class="random-img" src="img\Accueil\Image N°5.jpeg" alt="">
+        <div class="text"><h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px;"> web and design consulting <br>and any other IT <br>development service</h1>
+            <h4 style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Ipsam repellat quo ut explicabo error, dolores alias debitis eligendi <br>
+                sapiente minus placeat mollitia quisquam, veritatis expedita porro accusamus itaque <br>
+                nihil libero.</h4>
+        </div>
+    </div>
+
+    <div class="services-section" id="services-section">
+            <div class="service-item">
+                <img src="img\Service\Services 1.jpg" alt="">
+                <div class="service-text">
+                    <h2>developpement de site web</h2>
+                    <p>nous offrons a nos client une equipe de qualité pour la réalisation de leurs site 
+                        <br>notons que un site est un élément crusial dans la vulgarisation de l'image de l'entreprise de nos jours 
+                        <br>car vias les media sociaux vous pouvez communiquer directement avec vos client et aussi avec vos employer 
+                        br alors notons que cela est un element tres important pour toute nouvelle entreprise voulans prospéré
+                    </p>
+                </div>
+                <button class="contact-button" onclick="openModal()"><i class="fas fa-envelope"></i> Contactez-nous</button>
+            </div>
+            <div class="service-item">
+                <div class="service-text">
+                    <img src="img/Service/Services 2.jpg" alt="">
+                    <h2>maintenance et service apres vente de vos site</h2>
+                    <p>comme nous le savons la mise en place d'un site web necessite une concentrtion et une attention profonde 
+                        <br>cela implique qu'il peut avoir des erreur lors du developpement d'un site soit par notre equipe ou une autre equipe nous vous proposons nos ser vice 
+                        dans la maintenance de ceci
+                    </p>
+                </div>
+                <button class="contact-button" onclick="openModal()"><i class="fas fa-envelope"></i> Contactez-nous</button>
+            </div>
+            <div class="service-item">
+                <div class="service-text">
+                    <img src="img\Service\Services 3.jpg" alt="">
+                    <h2>vente d'equipement informatique</h2>
+                    <p>nous vous accompagons aussi dans l'achat des equipements informatiques kit et materiel de travail
+                    et nous vous assurons une fiabilite de nos materiel et une garantir sur chaque produits
+                    </p>
+                </div>
+                  <button class="contact-button" onclick="openModal()"><i class="fas fa-envelope"></i> Contactez-nous</button>
+            </div>    
+    </div>
+
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h1>Contactez-nous</h1>
+            <form>
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="about-section" id="about-section">
+        <h1>À propos de nous</h1>
+        <p>Nous sommes une équipe de consultants en informatique avec une solide maîtrise des langages de programmation et de la manipulation de données. Nous avons une expérience significative dans le développement de solutions logicielles pour une variété d'industries.</p>
+        <p>Nos compétences clés incluent :</p>
+        <ul>
+            <li>Langages de programmation : Java, Python, C++, JavaScript, etc.</li>
+            <li>Manipulation de données : SQL, Excel, R, etc.</li>
+            <li>Autres compétences : Développement web, Développement mobile, Intelligence artificielle, etc.</li>
+        </ul>
+    </div>
+<section class="sect">
+        <div class="contact-section" id="contact-section">
+            <h1>Contactez-nous</h1>
+            <form>
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+        <div class="info-section">
+            <h2>Informations de contact</h2>
+            <p><i class="fas fa-map-marker-alt"></i>yaounde barriere ahala2</p>
+            <p><i class="fas fa-phone"></i>+237 620703010</p>
+            <p><i class="fas fa-envelope"></i>talladarylarsen85@gmail.com</p>
+            <h2>Suivez-nous sur les réseaux sociaux</h2>
+            <p><i class="fab fa-facebook"></i>daryl arsen</p>
+            <p><i class="fab fa-twitter"></i>daryl</p>
+            <p><i class="fab fa-whatsapp"></i>daryl T.A.D</p>
+            <p><i class="fab fa-instagram"></i>daryl arsen</p>
+        </div>
+</section>   
+    <footer>
+        <div class="footer-content">
+            <h3>DARYL CENTER consulting</h3>
+            <p>yaounde barriere ahala2</p>
+            <ul class="contact-info">
+                <li>Téléphone : +237 658940985</li>
+                <li>Email : talladarylarsen85@gmail.com</li>
+            </ul>
+            <p>© 2023 daryl center consulting. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+    window.onload = function() {
+    var images = document.getElementsByClassName('random-img');
+    var index = Math.floor(Math.random() * images.length);
+    images[index].style.display = 'block';
+    setInterval(function() {
+        images[index].style.display = 'none';
+        index = Math.floor(Math.random() * images.length);
+        images[index].style.display = 'block';
+    }, 3000); // Change image every 5 seconds
+};
+
+// Get the modal
+var modal = document.getElementById("contactModal");
+
+// Function to open the modal
+function openModal() {
+    modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+</script>
